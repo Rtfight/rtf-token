@@ -11,11 +11,4 @@ contract ReadyToFightToken is ERC20, ERC20Burnable {
     {
         _mint(initialOwner, _supply);
     }
-
-    function _update(address from, address to, uint256 value)
-        internal
-        override(ERC20)
-    {
-        super._update(from, to, value);
-    }
 }
